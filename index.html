@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#06100D"><title>CyberShield AI</title>
+<link rel="manifest" href="manifest.json"><link rel="icon" href="assets/icon.svg">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header><div><b class="brand">CyberShield AI</b><small data-i="tag">Your Digital Safety Guardian</small></div>
+<span class="pill"><i class="dot"></i><span data-i="status">System ready</span></span></header>
+<main>
+<section id="home" class="scr on">
+ <div class="card hero"><h2 data-i="q">What do you want to check?</h2>
+ <textarea id="hq" placeholder="Paste suspicious message, email or link..." aria-label="Message to check"></textarea>
+ <button class="btn" id="hscan">Scan threat</button><button class="btn ghost" id="demo">Demo mode</button><p id="herr" class="err"></p></div>
+ <h3>Quick actions</h3>
+ <div class="grid" id="qa"></div>
+ <h3>Overview</h3><div class="grid g2" id="hstats"></div>
+ <h3>Recent activity</h3><div id="recent"></div>
+</section>
+<section id="scan" class="scr"><h2>Threat analyzer</h2>
+ <div class="tabs" id="tabs"><button data-t="text" class="on">Text</button><button data-t="url">URL</button><button data-t="email">Email / message</button></div>
+ <div class="card"><textarea id="inp" aria-label="Content to analyze"></textarea>
+ <div class="row"><select id="samp" aria-label="Sample"></select><button class="btn ghost sm" id="mic" hidden>Voice input</button></div>
+ <p class="note">Do not paste real passwords, OTPs, or financial credentials into this demo. Your analysis data is stored locally in demo mode.</p>
+ <button class="btn" id="go">Analyze threat</button><div class="row"><button class="btn ghost sm" id="safe">Load safe example</button><button class="btn ghost sm" id="threat">Load demo threat</button></div><p id="err" class="err"></p></div>
+ <div id="prog" class="card" hidden></div><div id="res"></div></section>
+<section id="dash" class="scr"><h2>Dashboard</h2><div id="dbody"></div></section>
+<section id="hist" class="scr"><h2>Threat history</h2><div id="hbody"></div></section>
+<section id="chal" class="scr"><h2>Can you catch the scam?</h2><div id="cbody"></div></section>
+<section id="tutor" class="scr"><h2>Cyber tutor</h2><div id="tbody"></div></section>
+<section id="safety" class="scr"><h2>Safety center</h2><div id="sbody"></div></section>
+<section id="reports" class="scr"><h2>Incident reports</h2><div id="rbody"></div></section>
+<section id="report" class="scr"><h2>Cyber incident report</h2><div id="repbody"></div></section>
+<section id="about" class="scr"><h2>Built by students</h2><div class="card"><p>CyberShield AI is a student innovation project designed to promote cybersecurity awareness through artificial intelligence, automation, education and interactive learning.</p>
+<p><b>Student name:</b> Ayesha<br><b>Section:</b> A<br><b>Roll no:</b> 58<br><b>Project:</b> CyberShield AI</p>
+<p class="note">Designed for student exhibition and future worldwide scalability.</p>
+<label>Language <select id="lang"><option value="en">English</option><option value="ur">اردو (partial)</option></select></label></div>
+<div class="card"><b>Privacy</b><p class="note">Your analysis data is stored locally in demo mode. Messages are never uploaded unless you configure an optional AI endpoint.</p></div></section>
+</main>
+<nav id="nav"><button data-go="home" class="on">Home</button><button data-go="scan">Scan</button><button data-go="dash">Dashboard</button><button data-go="hist">History</button></nav>
+<script src="js/config.js"></script><script src="js/i18n.js"></script><script src="js/data.js"></script><script src="js/rules.js"></script><script src="js/app.js"></script>
+</body></html>
